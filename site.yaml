@@ -1,0 +1,19 @@
+---
+
+- name: show hostname
+  hosts: all
+  become: yes
+  gather_facts: yes
+  strategy: free
+  roles:
+  - { role: showhostname, tags: ['showhostname'] }
+
+- name: example role for a group
+  hosts: hello
+  become: yes
+  gather_facts: yes
+  strategy: free
+  roles:
+  - { role: hello, tags: ['hello'] }
+
+...

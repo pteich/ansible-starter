@@ -1,0 +1,14 @@
+# group definitions
+
+[mygroup]
+localhost ansible_host=my.full.hostname primary_ipv4=127.0.0.1
+
+[mygroup:vars]
+myname=World
+
+# role groups
+
+[hello:children]
+mygroup
+
+# [EOF]

@@ -1,0 +1,8 @@
+---
+
+- name: Show just hello world
+  debug:
+    msg: >  
+      Hello {{ myname }}!
+
+...
