@@ -4,7 +4,5 @@
 *.swp
 .DS_Store
 .idea
-ansible.cfg
 vagrant*
 vault_password_file
-/roles/collins.*/
